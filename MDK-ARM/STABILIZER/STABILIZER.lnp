@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"stabilizer\startup_stm32f103xb.o"
+"stabilizer\i2c-lcd.o"
+"stabilizer\main.o"
+"stabilizer\stm32f1xx_it.o"
+"stabilizer\stm32f1xx_hal_msp.o"
+"stabilizer\stm32f1xx_hal_gpio_ex.o"
+"stabilizer\stm32f1xx_hal_adc.o"
+"stabilizer\stm32f1xx_hal_adc_ex.o"
+"stabilizer\stm32f1xx_hal_i2c.o"
+"stabilizer\stm32f1xx_hal_tim.o"
+"stabilizer\stm32f1xx_hal_tim_ex.o"
+"stabilizer\stm32f1xx_hal.o"
+"stabilizer\stm32f1xx_hal_rcc.o"
+"stabilizer\stm32f1xx_hal_rcc_ex.o"
+"stabilizer\stm32f1xx_hal_gpio.o"
+"stabilizer\stm32f1xx_hal_dma.o"
+"stabilizer\stm32f1xx_hal_cortex.o"
+"stabilizer\stm32f1xx_hal_pwr.o"
+"stabilizer\stm32f1xx_hal_flash.o"
+"stabilizer\stm32f1xx_hal_flash_ex.o"
+"stabilizer\stm32f1xx_hal_exti.o"
+"stabilizer\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "STABILIZER\STABILIZER.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STABILIZER.map" -o STABILIZER\STABILIZER.axf
